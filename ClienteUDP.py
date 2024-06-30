@@ -3,10 +3,8 @@ import socket
 host = "127.0.0.1"
 porta = 1060
 
-# Configuração do cliente UDP
 cliente = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-# Loop principal do cliente
 while True:
     print("\n=== MENU ===")
     print("1. Incluir Dados")
@@ -53,5 +51,4 @@ while True:
     else:
         print("Opção inválida. Escolha novamente.")
 
-# Fechar o cliente UDP
 cliente.close()
